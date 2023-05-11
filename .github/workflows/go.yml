@@ -16,10 +16,7 @@ jobs:
       USER: root
       PASSWORD: root
       DBNAME: root
-    strategy:
-      matrix:
-        go_version: ['1.18', '1.17', '>=1.18']
-        os: ['ubuntu-latest', 'ubuntu-18.04']
+      runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
 
